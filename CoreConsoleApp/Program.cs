@@ -21,7 +21,7 @@ namespace CoreConsoleApp
             b.AddInterest();
             Console.WriteLine(b);
 
-            BankAccount c = new SavingsAccount("C3000", "Komal", 850);
+            BankAccount c = new CheckingAccount("C3000", "Komal", 850);
 
             c.Withdraw(550);
             c.Deposit(23);
