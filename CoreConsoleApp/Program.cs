@@ -7,7 +7,9 @@ namespace CoreConsoleApp
     {
         static void Main()
         {
-            BankAccount a = new CheckingAccount("A1000", "Joe", 01);
+            string myName = "Alexis";
+            BankAccount a = new CheckingAccount("A1000", "Joe", 500);
+
             a.Deposit(300);
             a.Withdraw(900);
             a.Withdraw(800);
