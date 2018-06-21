@@ -8,10 +8,12 @@ namespace CoreConsoleApp
         static void Main()
         {
             BankAccount a = new CheckingAccount("A1000", "Joe", 500);
-
+            
+            //Update on Bank Account.
             a.Deposit(300);
             a.Withdraw(900);
             a.Withdraw(800);
+            a.Deposit(9500); //Made a deposit of 9500.00;
             Console.WriteLine(a);   //Normally, this would display CoreConsoleApp.CheckingAccount, but I overrode the ToString() method!
 
 
