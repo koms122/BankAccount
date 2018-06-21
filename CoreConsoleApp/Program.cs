@@ -7,24 +7,20 @@ namespace CoreConsoleApp
     {
         static void Main()
         {
-            BankAccount a = new CheckingAccount("A1000", "Joe", 500);
-
+            BankAccount a = new CheckingAccount("A1000", "Joe", 01);
             a.Deposit(300);
             a.Withdraw(900);
             a.Withdraw(800);
             Console.WriteLine(a);   //Normally, this would display CoreConsoleApp.CheckingAccount, but I overrode the ToString() method!
 
-
             BankAccount b = new SavingsAccount("B2000", "Ripal", 200);
-
             b.Withdraw(30);
             b.AddInterest();
             Console.WriteLine(b);
 
-            BankAccount c = new SavingsAccount("C3000", "Benjamin", 8000000000);
-            a.Deposit(2000000000);
+            BankAccount b1 = new SavingsAccount("B13000", "Benjamin", 8000000000);
+            a.Deposit(20000);
             Console.WriteLine(c);
-
 
             Console.ReadLine();
         }
