@@ -15,7 +15,7 @@ namespace CoreConsoleApp
             Console.WriteLine(a);   //Normally, this would display CoreConsoleApp.CheckingAccount, but I overrode the ToString() method!
 
 
-            BankAccount b = new SavingsAccount("B2000", "Ripal", 200);
+            BankAccount b = new SavingsAccount("B2000", "John", 200); //changed name
 
             b.Withdraw(30);
             b.AddInterest();
