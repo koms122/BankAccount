@@ -21,6 +21,10 @@ namespace CoreConsoleApp
             b.AddInterest();
             Console.WriteLine(b);
 
+            BankAccount c = new SavingsAccount("C3000", "Benjamin", 8000000000);
+            a.Deposit(2000000000);
+            Console.WriteLine(c);
+
 
             Console.ReadLine();
         }
