@@ -12,6 +12,8 @@ namespace CoreConsoleApp
             //Update on Bank Account.
             a.Deposit(300);
             a.Withdraw(900);
+            a.Withdraw(50);
+            a.Deposit(100); //More changes
             a.Withdraw(800);
             a.Deposit(9500); //Made a deposit of 9500.00;
             Console.WriteLine(a);   //Normally, this would display CoreConsoleApp.CheckingAccount, but I overrode the ToString() method!
